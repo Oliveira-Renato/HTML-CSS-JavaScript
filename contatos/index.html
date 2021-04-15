@@ -15,5 +15,61 @@
     </ul>
     <hr>
     <p><a href="mailto:homer@yahooo.com">Entre em contato cum nóis</a></p>
+    <hr>
+     <!--forms scrowDown-->
+    <form action="noAction">
+        <p>What device do you listen to music on?</p>
+        <select name="device">
+            <option value="radio">radio</option>
+             <option value="celphone">celphone</option>
+            <option value="computer">computer</option>
+        </select>
+    </form>
+    <hr>
+   <!--forms like scrowDown--> 
+    <form action="noAction">
+        <p>Do you play any of the following instruments?
+            (You can select more than one option by holding
+            down control on a PC or command key on a Mac
+            while selecting different options.)</p>
+        <select name="instruments" size="3" multiple>
+            <option value="guitar" selected>Guitar</option>
+            <option value="bass" selected>Bass</option>
+            <option value="drum">Drum</option>
+            <option value="keyboard">keyboard</option>
+        </select>
+    </form>
+    <hr>
+    <!--forms to upload MP3, PDF, etc-->
+    <form action="noAction" method="POST">
+        <p>Upload your song in MP3 format:</p>
+        <input type="file" name="user-song /n">
+        <input type="submit" name="user-song" value="Enviar">
+    </form>
+    <hr>
+    <!--inserindo imagem no botão submit-->
+    <form action="noAction" method="POST">
+        <p>Insira seu email, para lhe enchermos de Spam:</p>
+        <input type="text" name="email">
+        <input type="image"  src="../Imagens/submit.png" width="120" height="30">
+    </form>
+    <hr>
+    <!--explorand a ta button  e misturando img com txt-->
+    <form action="noAction" method="POST">
+        <button><img src="../Imagens/submit.png" alt="add" width="10" height="10">Add</button>
+        <input type="hidden" name="bookmark" value="lyrics">
+    </form>
+    <hr>
+    <!--forms using tag label-->
+    <form action="noAction">
+        <label>Age <input type="text" name="age"></label>
+        <br>
+        Gender:
+        <input type="radio" name="gender" value="f" id="female">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" value="m" id="male">
+        <label for="male">Male</label>
+    </form>
+    
 </body>
 </html>
