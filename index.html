@@ -16,111 +16,51 @@
                 <li><a href="besteiras/index.html">Besteiras</a></li>
             </ul>
         <hr />
-            <form action="noaction">
-                <p>Select your favorite musical genre:
-                <br>
-                <input type="radio" name="genre" value="rock" checked>rock
-                <input type="radio" name="genre" value="jazz" checked>jazz
-                <input type="radio" name="genre" value="pop" checked>pop
-                </p>
-            </form>
-            <hr>
-            <form action="noaction">
-                <p>Select your favorite music service:
-                <br>
-                <input type="checkbox" name="service" value="Spotify" >Spotify
-                <input type="checkbox" name="service" value="itune" >Itune
-                <input type="checkbox" name="service" value="radio" >Radio
-            </form>
-        <hr>
-        <table>
-            <tr>
-              <!--cabeçalho com tabela-->  
-                <th></th>
-                <th scope="col">Saturday</th>
-                <th scope="col">Sunday</th>
-            </tr>
-            <tr>
-                <th scope="row">Tickets Sold:</th>
-                <td>129</td>
-                <td>219</td>
-            </tr>
-            <tr>
-                <th scope="row">Total Sales:</th>
-                <td>$389</td>
-                <td>$758</td>
-            </tr>
-        </table>
-        <hr>
-        <table>
-            <tr>
-                <th></th>
-                <th>9am</th>
-                <th>10am</th>
-                <th>11am</th>
-                <th>12am</th>
-            </tr>
-            <tr>
-                <th>Monday</th>
-                <td colspan="2">Geography</td>
-                <td>Math</td>
-                <td>Art</td>
-            </tr>
-            <tr>
-                <th>Tuesday</th>
-                <td colspan="3">Gym</td>
-                <td>Home esc</td>
-            </tr>
-        </table>
-        <!--Outro exemplo-->
-        <hr>
-        <table>
-            <thead>
-                <tr>
-                    <th></th>
-                    <th scope="col">PREÇO</th>
-                    <th scope="col">QUANTIDADE</th>
-                </tr>
-            </thead>
-            <!--corpo da tabala-->
-            <tbody>
-                <tr>
-                    <th scope="row">Uncharted</th>
-                    <td>R$100</td>
-                    <td>50</td>
-                </tr>
-                <tr>
-                    <th scope="row">Resident Evil</th>
-                    <td>R$80</td>
-                    <td>20</td>
-                </tr>
-                <tr>
-                    <th scope="row">Skyrm</th>
-                    <td>R$90</td>
-                    <td>8</td>
-                </tr>
-                <tr>
-                    <th scope="row">Dark Souls II</th>
-                    <td>R$60</td>
-                    <td>35</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td></td>
-                    <td colspan="2"><i>Pague 3 e leve um!</i></td>
-                </tr>
-            </tfoot>
-        </table>
-        <hr>
-        <!--Formularios-->
-        <form action="noAction">
-            <p>Name<input type="text" name="Username" size="15" maxlength="30"></p>   
-            <p>Password <input type="password" name="Password" size="15" maxlength="30"></p>
-            <p>What are <b>you</b> thinking about this?</p>
-            <textarea name="comments"  cols="30" rows="10">Enter your coments...</textarea>
-        </form>
+        <!--asking details from the users-->
+        <fieldset>
+            <legend>Your Details:</legend>
+            <label for="name">Name: 
+                <input type="text" name="name" size="30" maxlength="100"><br>
+            </label>
+            <label for="email">Email:  
+                <input type="email" name="email" size="30" maxlength="100">
+            </label>
+        </fieldset>
+        <br>
+        <!--asking users for their review-->
+        <fieldset>
+            <legend>Your Review:</legend>
+            <p>
+            <label for="hear-about"> How did you hear about us? </label>
+             <select name="referrer" id="hear-about"> 
+                 <option value="google">Google</option>
+                 <option value="friend">Friend</option>
+                 <option value="advert">Advert</option>
+                 <option value="others">Others</option>
+             </select>
+             </p>
+             <!--Asking the user if he(a) would visit us agair-->
+             <p>Would you visit again?<br>
+             <label >
+                <input type="radio" name="choise" value="y" id="yes">Yes
+             </label> 
+             <label>
+                <input type="radio" name="choise" value="n" id="no">No
+             </label>
+             <label>
+                <input type="radio" name="choise" value="m" id="maybe">Maybe
+             </label>
+             </p>
+             <!--coments from user-->
+             <label for="comment">Comment:<br>
+                <textarea name="comments"  cols="40" rows="4" placeholder="Enter your comments..."></textarea><br>
+             </label>
+             <label >
+                <input type="checkbox" name="subscriber" value="option" checked>Sign me up for emails update
+             </label><br>
+             <input type="submit" value="Submit review" >
 
+        </fieldset>
 
     </header>
     
