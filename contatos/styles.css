@@ -47,7 +47,7 @@ html, body {
     background-blend-mode: multiply;
     background-size: cover;
     padding-bottom: 30px;
-    margin-bottom: 2em;
+    
 }
 
 .title-name {
@@ -57,4 +57,11 @@ html, body {
     color: white;
     font-size: 7em;
     font-weight: normal;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.title-name-center {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
