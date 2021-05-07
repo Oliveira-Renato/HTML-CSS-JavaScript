@@ -1,4 +1,4 @@
-# projeto-site
-* Criando site durante o curso de Git e Github
+# HTML, CSS e Javascript
+* O propósito desse repositório é puramente acadêmico.
 ---
-## Será que vai dar certo?
+## Partiu estudar
