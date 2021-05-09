@@ -1,11 +1,12 @@
 body {
 	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
 	width: 100vw;
 	height: 100vh;
-	background-color: #6C7A89;
+	background-color: #00152c;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -18,28 +19,53 @@ body {
 	background-color: #fff;
 	padding: 10px;
 	text-align: center;	
+	
+	
 }
 
+.box-form {
+	color: rgb(77, 74, 74);
+	font-weight: bold;
+	background-color: rgb(190, 200, 233);
+}
+
+
 form input {
-	border-color: green;
+	border-color: rgb(44, 89, 238);
 	font-size: 1em;
-	border-radius: 10%;
+	
 	background-color: rgba(0, 0, 0, .1);
 }
 
 .btn {
 	 color: #FFF;     
-	 background-color: green;
+	 background-color: rgb(44, 89, 238);
      border: none;
      height: 30px;
      line-height: 15px;
      padding: 0 20px;
      text-transform: uppercase;
-     font-weight: bold;
+     font-weight: lighter;
 	 cursor: pointer;
 	 border-radius: 30px;
 }
 
 .btn:hover {
 	transform: scale(1.05);
+	background-color: rgb(5, 25, 94);
+}
+
+/* Cor de fundo do autocomplete */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px rgba(31, 26, 102, 0.322) inset;   
+}
+
+/* Cor do texto do autocomplete */
+input:-webkit-autofill {
+    -webkit-text-fill-color: rgba(66, 43, 97, 0.932) !important;
+	
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: rgb(71, 66, 66) !important;
 }
