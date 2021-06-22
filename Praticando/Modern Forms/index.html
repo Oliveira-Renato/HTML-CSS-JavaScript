@@ -5,14 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <div class="wrapper">
         <div id="formcontent">
-            <h2>LOGIN FORM</h2>
+            <h2 class="active">LOGIN</h2>
             <div class="first">
-                
+                <img class="icon" src="icon.png" >
+                <form action="">
+                    <input type="text" id="email" placeholder="Email">
+                    <input type="password" id="password" placeholder="Password">
+                    <input class="btn" type="submit" value="Log in" >
+                </form>
+                <div class="formfooter">
+                    <a href="">Forgot password?</a>
+                </div>
             </div>
         </div>
     </div>
