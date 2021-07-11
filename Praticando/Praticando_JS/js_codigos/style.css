@@ -1,0 +1,15 @@
+h1{
+    padding: 0;
+    text-align: center;
+}
+#demo
+{
+    text-align: center;
+    font-weight: 700;
+    font-size: 2em;
+    color: #ff0000;
+}
+.btn
+{
+    text-align: center;
+}
