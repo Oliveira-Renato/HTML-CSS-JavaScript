@@ -16,11 +16,10 @@ const nomeCompleto = ({sobrenome, nome}) => {
     return `${sobrenome} ${nome}`;
 }
 
-
-let {jutsu, idade, nome} = ninja;
-let {jutsu:{fogo, raio}} = ninja
-let {} = ninja;
+let {fogo, ocular, raio} = ninja.jutsu;
+let {nome, idade} =  ninja;
 
 
+console.log(nomeCompleto(ninja), idade)
+console.log(fogo, ocular, raio)
 
-console.log(nomeCompleto(ninja), idade, fogo, raio)
