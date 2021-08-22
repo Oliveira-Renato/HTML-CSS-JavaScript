@@ -1,3 +1,4 @@
+//fazendo updload de arquivo
 async function enviarArquivo() {
     let arquivo = document.getElementById('arquivo').files[0];
 
@@ -12,4 +13,15 @@ async function enviarArquivo() {
             'content-type': 'multipart/form-data'
         }
     })
+}
+
+//mostrando thumbnail 
+const mostrarImg = () => {
+    let arquivo = document.getElementById('arquivo').files[0];
+    let img = document.createElement('img');
+
+    img.src = URL.createObjectURL(arquivo)
+    img.width = 200;
+
+    document.getElementById('area').appendChild(img)
 }
