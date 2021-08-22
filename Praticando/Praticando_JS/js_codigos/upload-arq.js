@@ -15,7 +15,7 @@ async function enviarArquivo() {
     })
 }
 
-//mostrando thumbnail 
+/*mostrando thumbnail 
 const mostrarImg = () => {
     let arquivo = document.getElementById('arquivo').files[0];
     let img = document.createElement('img');
@@ -24,4 +24,22 @@ const mostrarImg = () => {
     img.width = 200;
 
     document.getElementById('area').appendChild(img)
+}*/
+
+//mostrando thumbnail
+const mostrarImg = () => {
+    let reader = new FileReader()
+    let arquivo = document.getElementById('arquivo').files[0];
+    
+    reader.onloadend = function() {
+        let img = document.createElement('img');
+        img.src = reader.result;
+        img.width = 200;
+
+        document.getElementById('area').appendChild(img)
+    }
+    
+
+    reader.readAsDataURL(arquivo);
 }
+
