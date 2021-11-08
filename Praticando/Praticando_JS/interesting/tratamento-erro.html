@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <!-- Praticando tratamento de erros com javascript -->
+  <script>
+    var num;//Nova variável 'num', recebera um numero do usuário. Valor máximo deve ser 10.
+
+    try{
+      num = prompt('Digite um numero: ')//Pede um número ao usuário e armazena na variável 'num' 
+
+      if(num > 10) {//Verifica se o valor é maior que 10, caso 'true' gera um novo erro
+        throw new Error('Valor máximo é 10, ')
+      }
+
+    }catch(e){//parâmetro 'e' = Error
+      document.write('Error: ' + e.message)
+      
+    }finally{
+      document.write('Valor Informado: ' + num)//mostra o erro
+    }
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

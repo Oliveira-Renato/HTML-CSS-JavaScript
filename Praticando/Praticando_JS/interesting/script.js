@@ -1,3 +1,14 @@
+var valor = document.getElementsByClassName('cep');
+
+
+form.addEventListener('submit', function(e) {
+  // alerta o valor do campo
+  alert(campo.value);
+
+  // impede o envio do form
+  e.preventDefault();
+});
+
 //Nova variável "cep" somente com dígitos.
 var cep = valor.replace(/\D/g, '');
 
@@ -22,5 +33,5 @@ if (cep !== "") {
     //Insere script no documento  e carrega o conteúdo
     document.body.appendChild(script);
   }
-  
+
 }
